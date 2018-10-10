@@ -6,23 +6,18 @@
 </head>
 <body>
 <script>
-var num1 =prompt (“Llevas 1”);
-var num2 =prompt (“Llevas 2”);
-var num3 =prompt (“Llevas 3”);
-var num4 =prompt (“Llevas 4”);
-var num5 =prompt (“Llevas 5”);
-var num6 =prompt (“Llevas 6”);
-var num7 =prompt (“Llevas 7”);
-var num8 =prompt (“Llevas 8”);
-var num9 =prompt (“Llevas 9”);
-var num10 =prompt (“Llevas 10”);
-Var numeros
-=[num1,num2,num3,num4,n
-um5,num6,num7,num8,num
-9,num10];
-numeros = numeros.sort();
-alert ("El número más pequeño és "+numeros[0]+”y el más grande
-és”+numeros[9]);
+    var  frase = prompt("Dime la para saber las vocales que hay");
+    var contador = 0;
+    var contadoro=0;
+    for (var i = 0; i < frase.length; i++) {
+        if (frase[i]=="A" || frase[i]=="a"|| frase[i]=="E"|| frase[i]=="e"|| frase[i]=="I"|| frase[i]=="i"|| frase[i]=="U"|| frase[i]=="u"){
+            contador++;
+        }
+        else if(frase[i]=="O"||  frase[i]=="o"){
+            contadoro++;
+        }
+    }
+    alert("Contiene "+(contador+contadoro)+" vocales. Y contiene "+contadoro+" O")
 </script>
 </body>
 </html>
